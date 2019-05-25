@@ -13,23 +13,19 @@ body {
     fill: none;
 }
 
-header {
-    width: 100%;
+.header {
     height: 80px;
-
     position: fixed;
     padding: 15px;
     top: 0;
-    left: 0;
     z-index: 5;
-
     background:#25b99a;
     box-shadow:0px 2px 4px rgba(44,62,80,0.15);
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
 }
 
-header input {
+.header input {
 
     width: 100%;
     height: 50px;
@@ -49,23 +45,23 @@ header input {
     -moz-appearance: none;
 }
 
-header input::-webkit-input-placeholder {
+.header input::-webkit-input-placeholder {
     color: rgba(255,255,255,0.75);
 }
 
-header input::-moz-placeholder {
+.header input::-moz-placeholder {
     color: rgba(255,255,255,0.75);
 }
 
-header input::-moz-placeholder {
+.header input::-moz-placeholder {
     color: rgba(255,255,255,0.75);
 }
 
-header input:-ms-input-placeholder {
+.header input:-ms-input-placeholder {
     color: rgba(255,255,255,0.75);
 }
 
-header button{
+.header button{
     width: 50px;
     height: 50px;
 
@@ -73,7 +69,7 @@ header button{
     top: 15px;
     right: 15px;
     z-index: 2;
-    
+
     border-radius: 25px;
     background: white;
     border: 0px;
@@ -86,28 +82,21 @@ header button{
     -moz-appearance: none;
 }
 
-header button svg {
+.header button svg {
    width: 16px;
    height: 16px;
 
    position: absolute;
    top: 50%;
    left: 50%;
-   
+
    margin: -8px 0 0 -8px;
 }
 
-header button svg .fill {
-    fill: #25b99a; 
+.header button svg .fill {
+    fill: #25b99a;
 }
 
-.container {
-    width: 100%;
-    float: left;
-    padding: 15px;
-    /*left: 50%;*/
-    
-}
 
 ul.todo{
     width: 100%;
@@ -227,7 +216,6 @@ ul.todo li .buttons button.complete svg .fill{
 ul.todo#completed{
     position: relative;
     padding: 60px 0 0 0;
-  	left: 6%;
 }
 
 ul.todo#completed:before{
